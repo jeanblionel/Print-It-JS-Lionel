@@ -32,3 +32,15 @@ const arrowRight = document.querySelector('#banner .arrow_right');
 arrowRight.addEventListener('click', (e) => {
    // console.log('droite');
 })
+
+const dotsSlider = document.querySelector('div .dots');
+
+const pointSlider = `<div class='dot'></div>`;
+
+for (let slide of slides) {
+    dotsSlider.insertAdjacentHTML('afterbegin', pointSlider);
+}
+
+
+const dotList = document.querySelectorAll('.dots .dot');
+ dotList[0].classList.add('dot_selected');
