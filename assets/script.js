@@ -22,3 +22,13 @@ console.log(cursorPointer);
 cursorPointer.addEventListener('mouseover', (e)=>{
 	e.target.style.cursor = "pointer";
 })*/
+
+const arrowLeft = document.querySelector('#banner .arrow_left');
+arrowLeft.addEventListener('click', (e) => {
+  //  console.log('gauche');
+})
+
+const arrowRight = document.querySelector('#banner .arrow_right');
+arrowRight.addEventListener('click', (e) => {
+   // console.log('droite');
+})
