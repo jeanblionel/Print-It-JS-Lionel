@@ -17,12 +17,7 @@ const slides = [
 	}
 ]
 
-//Test d'un pointer sur les flèches du slider
-/*const cursorPointer = document.querySelectorAll('.arrow')
-console.log(cursorPointer);
-cursorPointer.addEventListener('mouseover', (e)=>{
-	e.target.style.cursor = "pointer";
-})*/
+
 
 const arrowLeft = document.querySelector('#banner .arrow_left');
 arrowLeft.addEventListener('click', (e) => {
@@ -32,7 +27,6 @@ arrowLeft.addEventListener('click', (e) => {
 
 const arrowRight = document.querySelector('#banner .arrow_right');
 arrowRight.addEventListener('click', (e) => {
-    console.log('droite');
     moveSlide(1);
     dotList[numero - 1].classList.remove('dot_selected');
 })
